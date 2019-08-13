@@ -110,9 +110,6 @@ class Bluecore_Integration_Block_Product extends Bluecore_Integration_Block_Comm
         } elseif ($product->getTypeId() == Mage_Catalog_Model_Product_Type::TYPE_BUNDLE) {
             $usedOptions = $productType->getOptionsIds($product);
             $collection = $productType->getSelectionsCollection($usedOptions, $product);
-
-            //Mage::getResourceModel('bundle/selection')->getChildrenIds(447, false);
-
         } elseif ($product->getTypeId() == Mage_Catalog_Model_Product_Type::TYPE_GROUPED) {
             $collection = $productType->getAssociatedProductCollection($product);
         }

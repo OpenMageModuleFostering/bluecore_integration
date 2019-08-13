@@ -1,22 +1,32 @@
 <?xml version="1.0"?>
 <package>
     <name>Bluecore_Integration</name>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <stability>stable</stability>
     <license>gpl</license>
     <channel>community</channel>
     <extends/>
-    <summary>Your behavioral and product data in one system, powering immediate marketing actions as unique as your customers.</summary>
-    <description>&lt;p&gt;Bluecore combines terabytes of behavioral and catalog data to produce powerful insights, drive industry-defying conversion rates and personalize customer experiences. Our real-time interaction management system provides workflows for personalized and effective multi-channel communication with your customers.&lt;/p&gt;&#xD;
-&lt;p&gt;The Bluecore integration with Magento enables customers to quickly and easily implement Bluecore technology on their storefront. The extension automatically deploys Bluecore tracking across the site, collecting vast amounts of customer behavioral data and replicating your entire catalog for product recommendations, notifications and audience insights. Setup the entire Bluecore product suite in just a few easy steps.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;&#xD;
-&lt;ul&gt;&lt;li&gt;Behavioral event tracking&lt;/li&gt;&lt;li&gt;&lt;span&gt;Catalog Replication&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Behavioral triggers: Abandoned view, search and cart&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Product notification triggers: Back in stock, price drop, new arrivals&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Product recommendations in email&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Predictive audience generation and insights&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Audience syncing to Paid Search, Paid Social, Display and Personalization platforms&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-    <notes>- Added support for multishipping checkout&#xD;
-- Updated how bundled products are tracked</notes>
+    <summary>Bluecore is the leading Decisioning Engine for ecommerce marketers. Create audiences, journeys and triggers.</summary>
+    <description>&lt;b&gt;About Bluecore&lt;/b&gt;&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+&lt;a href="http://bluecore.com/"&gt;Bluecore&lt;/a&gt;&#x2019;s Decisioning Platform is built for Commerce.&#xD;
+By unifying customer and catalog data we empower marketers to make decisions in the moment, based on massive data sets, across all channels.&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+The Bluecore integration with Magento enables customers to quickly and easily implement Bluecore technology on their storefront. The extension automatically deploys Bluecore tracking across the site, collecting vast amounts of customer behavioral data and replicating your entire catalog for product recommendations, notifications and audience insights. Setup the entire Bluecore product suite in just a few easy steps.&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+&lt;b&gt;Features&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&#xD;
+- Behavioral event tracking&lt;br /&gt;&#xD;
+- Catalog Replication&lt;br /&gt;&#xD;
+- Behavioral triggers: Abandoned view, search and cart&lt;br /&gt;&#xD;
+- Product notification triggers: Back in stock, price drop, new arrivals &lt;br /&gt;&#xD;
+- Product recommendations in email &lt;br /&gt;&#xD;
+- Predictive audience generation and insights &lt;br /&gt;&#xD;
+- Audience syncing to Paid Search, Paid Social, Display and Personalization platforms &lt;br /&gt;</description>
+    <notes>- Updated description copy</notes>
     <authors><author><name>Graham Gnall</name><user>bluecore</user><email>graham@bluecore.com</email></author><author><name>Brian Immel</name><user>bimmel</user><email>brian@bluecore.com</email></author></authors>
-    <date>2017-01-25</date>
-    <time>23:04:51</time>
-    <contents><target name="magecommunity"><dir name="Bluecore"><dir name="Integration"><dir name="Block"><file name="Cart.php" hash="01256a56481263e340a629a3f7970494"/><file name="Category.php" hash="aa6a9d71e3a2acccfc6399af12a38cf8"/><dir name="Common"><file name="Abstract.php" hash="124679948572d619b65037083b5388bc"/></dir><file name="Head.php" hash="cc30087f357883bfa17e9ce94df3f098"/><file name="Product.php" hash="3d1d89b00659afd4d99ab3f5ee62c866"/><file name="Search.php" hash="41bf7dac23efce9d0bb0714f03edd726"/><file name="Success.php" hash="0d6774482a687d4b01686154a15d9ed1"/><file name="Test.php" hash="0e574cfaad4c14e7cf3e56f195cba3ad"/><file name="Wishlist.php" hash="e5ff4ecfe652913830f08ec8fb5781ad"/></dir><dir name="Helper"><file name="Data.php" hash="f8dbf7d94cd102ef6734c34857a306f4"/></dir><dir name="Model"><file name="Observer.php" hash="922e56469a774811a7c72ff644584112"/><dir name="System"><file name="Environment.php" hash="19a9d2bbea517a6e18f32adf53716375"/></dir></dir><dir name="etc"><file name="config.xml" hash="c61c481d398fa36c79bd78b87dff881f"/><file name="system.xml" hash="d971fef7b6c455bbdd08a844bfff832c"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="bluecore.xml" hash="69f68d97c3137f0bb2667eafe5eebe91"/></dir><dir name="template"><dir name="bluecore"><file name="cart.phtml" hash="23529fe1827f7f32caa5d499fc4d212f"/><file name="category.phtml" hash="cf00d37c0ecb4943ef501efbdd8b3478"/><file name="head.phtml" hash="c7f49bedb00b9a9144ac4cea8a6f4e24"/><file name="minicart.phtml" hash="2427299f66a67a776f7d0bd929a49536"/><file name="product.phtml" hash="bde794f488c1a681cf663b099473bfcd"/><file name="search.phtml" hash="e4943fc17b677b63c40f95de8c36e55d"/><file name="success.phtml" hash="98c7999c12d3817294fb69c5b1d6eb9a"/><file name="test.phtml" hash="c5812381866cc000665a0db41a6c4c9f"/><file name="wishlist.phtml" hash="74887b4e5cb9af0c30a31b5b9cea4e14"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Bluecore_Integration.xml" hash="1d480a96bbe276fce4d988b24bc911d3"/></dir></target></contents>
+    <date>2017-03-07</date>
+    <time>19:59:59</time>
+    <contents><target name="magecommunity"><dir name="Bluecore"><dir name="Integration"><dir name="Block"><file name="Cart.php" hash="01256a56481263e340a629a3f7970494"/><file name="Category.php" hash="aa6a9d71e3a2acccfc6399af12a38cf8"/><dir name="Common"><file name="Abstract.php" hash="124679948572d619b65037083b5388bc"/></dir><file name="Head.php" hash="cc30087f357883bfa17e9ce94df3f098"/><file name="Product.php" hash="3336cbd87c82dc91187b64d66581ea10"/><file name="Search.php" hash="41bf7dac23efce9d0bb0714f03edd726"/><file name="Success.php" hash="0d6774482a687d4b01686154a15d9ed1"/><file name="Test.php" hash="0e574cfaad4c14e7cf3e56f195cba3ad"/><file name="Wishlist.php" hash="e5ff4ecfe652913830f08ec8fb5781ad"/></dir><dir name="Helper"><file name="Data.php" hash="f8dbf7d94cd102ef6734c34857a306f4"/></dir><dir name="Model"><file name="Observer.php" hash="922e56469a774811a7c72ff644584112"/><dir name="System"><file name="Environment.php" hash="19a9d2bbea517a6e18f32adf53716375"/></dir></dir><dir name="etc"><file name="config.xml" hash="c61c481d398fa36c79bd78b87dff881f"/><file name="system.xml" hash="d971fef7b6c455bbdd08a844bfff832c"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="bluecore.xml" hash="69f68d97c3137f0bb2667eafe5eebe91"/></dir><dir name="template"><dir name="bluecore"><file name="cart.phtml" hash="23529fe1827f7f32caa5d499fc4d212f"/><file name="category.phtml" hash="cf00d37c0ecb4943ef501efbdd8b3478"/><file name="head.phtml" hash="c7f49bedb00b9a9144ac4cea8a6f4e24"/><file name="minicart.phtml" hash="2427299f66a67a776f7d0bd929a49536"/><file name="product.phtml" hash="bde794f488c1a681cf663b099473bfcd"/><file name="search.phtml" hash="e4943fc17b677b63c40f95de8c36e55d"/><file name="success.phtml" hash="98c7999c12d3817294fb69c5b1d6eb9a"/><file name="test.phtml" hash="c5812381866cc000665a0db41a6c4c9f"/><file name="wishlist.phtml" hash="74887b4e5cb9af0c30a31b5b9cea4e14"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Bluecore_Integration.xml" hash="1d480a96bbe276fce4d988b24bc911d3"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.8</min><max/></package><package><name>Mage_Core_Modules</name><channel>enterprise</channel><min>1.13</min><max/></package></required></dependencies>
 </package>
