@@ -1,0 +1,9 @@
+<?php if ($this->isEnabled()) { ?>
+    <?php $wishlistProduct = $this->getWishlistProduct(); ?>
+    <?php if ($wishlistProduct) { ?>
+        <script type="text/javascript">
+        _bluecoreTrack = window._bluecoreTrack || [];
+        _bluecoreTrack.push(["trackWishlist", <?php echo $this->eventData($wishlistProduct) ?>, <?php echo $this->getEnvironment() ?>]);
+        </script>
+    <?php } ?>
+<?php } ?>

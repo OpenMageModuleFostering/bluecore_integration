@@ -1,0 +1,19 @@
+<?php
+if ($this->isEnabled()) {
+    $addToCartProducts = $this->getAddToCartProducts();
+    $removeFromCartProduct = $this->getRemoveFromCartProduct();
+
+    if ($addToCartProducts || $removeFromCartProduct) {
+?>
+    <script type="text/javascript">
+        _bluecoreTrack = window._bluecoreTrack || [];
+        <?php if ($addToCartProducts) { ?>
+            <?php foreach ($addToCartProducts as $productId) { ?>
+                _bluecoreTrack.push(["trackAddToCart", <?php echo $this->getAddToCartEventData($productId) ?>, <?php echo $this->getEnvironment() ?>]);
+            <?php } ?>
+        <?php } elseif ($removeFromCartProduct) { ?>
+            _bluecoreTrack.push(["trackRemoveFromCart", <?php echo $this->getRemoveFromCartEventData($removeFromCartProduct) ?>, <?php echo $this->getEnvironment() ?>]);
+        <?php } ?>
+    </script>
+<?php } ?>
+<?php } ?>

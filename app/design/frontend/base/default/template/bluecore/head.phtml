@@ -1,0 +1,18 @@
+<?php if ($this->isEnabled()) { ?>
+    <script type="text/javascript">
+    // Bluecore
+    var triggermail=triggermail||[];triggermail.load=function(a){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===document.location.protocol?"https://":"http://")+"triggeredmail.appspot.com/triggermail.js/"+a+".js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)};triggermail.load("<?php echo $this->getBluecoreNamespace(); ?>");window.triggermail=triggermail;
+    </script>
+
+    <?php $identifyData = $this->getIdentifyData(); ?>
+    <?php if ($identifyData) { ?>
+        <script type="text/javascript">
+        _bluecoreTrack = window._bluecoreTrack || [];
+        _bluecoreTrack.push(["trackIdentify", {
+            'email': '<?php echo $identifyData->getEmail() ?>',
+            'source': '<?php echo $identifyData->getSource() ?>',
+        }, 2]);
+        </script>
+    <?php } ?>
+
+<?php } ?>

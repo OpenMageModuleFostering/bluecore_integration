@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Bluecore_Integration",
+    "type": "magento-module",
+    "license": "gpl",
+    "homepage": "",
+    "description": "Your behavioral and product data in one system, powering immediate marketing actions as unique as your customers.",
+    "authors": [
+    {
+        "name": "Graham Gnall",
+        "email": "graham@bluecore.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

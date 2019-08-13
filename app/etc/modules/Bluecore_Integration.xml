@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Bluecore_Integration>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Bluecore_Integration>
+    </modules>
+</config>

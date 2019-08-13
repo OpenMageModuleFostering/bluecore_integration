@@ -1,0 +1,8 @@
+<?php if ($this->isEnabled()) { ?>
+<script type="text/javascript">
+_bluecoreTrack = window._bluecoreTrack || [];
+<?php foreach ($this->ordersEventData() as $orderEventData) { ?>
+    _bluecoreTrack.push(["trackCheckout", <?php echo $orderEventData ?>, <?php echo $this->getEnvironment() ?>]);
+<?php } ?>
+</script>
+<?php } ?>
