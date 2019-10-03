@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Bluecore_Integration",
+    "name": "OpenMageModuleFostering\/Bluecore_Integration",
     "type": "magento-module",
     "license": "gpl",
     "homepage": "",
     "description": "Bluecore is the leading Decisioning Engine for ecommerce marketers. Create audiences, journeys and triggers.",
     "authors": [
-    {
-        "name": "Graham Gnall",
-        "email": "graham@bluecore.com"
-    }
-],
+        {
+            "name": "Graham Gnall",
+            "email": "graham@bluecore.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
